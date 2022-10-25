@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native Web Sqad</title>
+    <link rel="stylesheet" type="text/css" href="/style/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="/js/jquery.pagepiling.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/66013cf453.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/jquery.pagepiling.min.js"></script>
+    
+</head>
+<body>
+    <!-- Меню (закреп) -->
+<div class="grid__menu">
+    <div id="menu">
+        <div class="menu__logo">
+            <img src="/img/nativlogo.png">
+        </div>
+       <div class="menu__nav">
+            <ul>
+                <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Главная</a></li>
+                <li data-menuanchor="secondPage"><a href="#secondPage">Наши работы</a></li>
+                <li data-menuanchor="thirdPage"><a href="#thirdPage">О нас</a></li>
+                <li data-menuanchor="fourthPage"><a href="#fourthPage">Контакты</a></li>
+            </ul>
+       </div>
+
+    </div>
+</div>
+
+<div class="grid">
+    <div class="grid__side"></div>
+        <div class="grid__content iconblock">
+            <i class="fa-solid fa-paper-plane"></i>
+            <i class="fa-brands fa-git-square"></i>
+            <i class="fa-solid fa-at"></i>
+            <i class="fa-brands fa-discord"></i>
+        </div>
+    <div class="grid__side"></div>
+</div>
+
+    <!-- Скролл-часть -->
+    <div id="pagepiling">
+        <div class="section">
+           <div class="grid">
+
+                <div class="grid__side firstpage__lside">
+                    <h4 class="firstpage__lside">NATIVE SQUAD</h4>
+                </div>
+
+                <div class="grid__content">
+                    <div class="firstpage">
+                        <div class="firstpage__banner">
+                            <img src="/img/infobanner.png">
+                            <p>Современные технологии, сильная команда, доступные цены для каждого! </p>   
+                        </div>
+                        <div class="firstpage__scroll">
+                            <h4>SCROLL DOWN</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid__side firstpage__lside">
+                    <h4 class="firstpage__lside">NATIVE SQUAD</h4>
+                </div>
+
+           </div>
+        </div>
+
+        <div class="section">
+            <div class="infomain">
+                <div class="grid">
+
+                    <div class="grid__side firstpage__lside">
+                        <h4 class="firstpage__lside">OUR WORKS</h4>
+                    </div>
+    
+                    <div class="grid__content">
+                        <div class="firstpage">
+                            <div class="firstpage__banner">
+                                <img src="/img/infobanner.png">
+                                <p>Современные технологии, сильная команда, доступные цены для каждого! </p>   
+                            </div>
+                            <div class="firstpage__scroll">
+                                <h4>SCROLL DOWN</h4>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="portfolio">
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="aboutus">
+
+            </div>     
+        </div>
+
+
+    </div>
+    <script>
+        $(document).ready(function() {
+	        $('#pagepiling').pagepiling({
+                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+                menu: '#menu',
+                sectionsColor: ['#FFF', '#ed6974', '#FFF', '$FFF'],
+                scrollingSpeed: 700,
+                loopBottom: true,
+                loopTop: true,
+                verticalCentered: false,
+            });
+         });
+    </script>
+</body>
+</html>
